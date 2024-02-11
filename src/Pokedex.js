@@ -9,7 +9,7 @@ const Pokedex = () => {
             <h3 className="Pokedex-title">Pokedex</h3>
             <div>
                 {listPokemon.map(p => (
-                    <Pokedex key={p.id} name={p.name} type={p.type} baseExperience={p.base_experience} />
+                    <Pokecard key={p.id} name={p.name} type={p.type} baseExperience={p.base_experience} />
                 ))}
             </div>
         </>
